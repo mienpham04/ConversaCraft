@@ -11,7 +11,7 @@ const Message = () => {
           </div>
         </div>
         
-        <div className="chat-bubble">You were the Chosen One!</div>
+        <div className="chat-bubble text-black bg-white">You were the Chosen One!</div>
         <div className="chat-footer opacity-50">Delivered</div>
       </div>
       <div className="chat chat-end">
