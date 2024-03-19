@@ -16,6 +16,11 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json()); // to parse requests from req.body
 app.use(cookieParser());
 
+// app.use((req, res, next) => {
+//     res.setHeader('Cross-Origin-Opener-Policy', 'same-origin-allow-popups');
+//     next();
+// });
+
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 app.use("/api/users", userRoutes);
