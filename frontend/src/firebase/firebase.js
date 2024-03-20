@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBB1kXy7JIwvZ7jXmz9iCWqCnZCY6y7BAY",
-  authDomain: "conversacraft-2c9fd.firebaseapp.com",
-  projectId: "conversacraft-2c9fd",
-  storageBucket: "conversacraft-2c9fd.appspot.com",
-  messagingSenderId: "1014363300507",
-  appId: "1:1014363300507:web:13f1b5bbe23b8a5e8c9c3e",
-  measurementId: "G-7F056ZYGFK"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
