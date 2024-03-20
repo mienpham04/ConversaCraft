@@ -25,6 +25,6 @@ jobs:
       - name: Pull image from docker hub
         run: docker pull mienpham04/conversa_craft_deploy:latest
       - name: Run Docker Container
-        run: docker run -d -p 5000:5000 --name conversa-craft-container -e MONGO_PASSWORD='${{ secrets.MONGO_PASSWORD }}' mienpham04/conversa_craft
+        run: docker run -d -p 5000:5000 --name conversa-craft-container2 -e MONGO_PASSWORD='${{ secrets.MONGO_PASSWORD }}' mienpham04/conversa_craft
 
 
